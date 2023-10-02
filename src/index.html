@@ -24,10 +24,30 @@
             </li>
             <!-- Ajoutez d'autres serveurs de la même manière -->
         </ul>
+
+        <!-- Formulaire pour ajouter un nouveau serveur -->
+        <form id="add-server-form">
+            <label for="server-name">Nom du serveur:</label>
+            <input type="text" id="server-name" name="server-name" required>
+            
+            <label for="server-status">Statut:</label>
+            <select id="server-status" name="server-status">
+                <option value="online">En ligne</option>
+                <option value="offline">Hors ligne</option>
+            </select>
+            
+            <label for="server-cpu">CPU utilisé (%):</label>
+            <input type="number" id="server-cpu" name="server-cpu" required>
+            
+            <label for="server-memory">Mémoire utilisée (%):</label>
+            <input type="number" id="server-memory" name="server-memory" required>
+            
+            <button type="submit">Ajouter Serveur</button>
+        </form>
     </main>
-    <footer>
-        <!-- Pied de page -->
-    </footer>
+
+    <!-- ... (code HTML existant) ... -->
+
     <script src="dist/main.js"></script>
 </body>
 </html>
