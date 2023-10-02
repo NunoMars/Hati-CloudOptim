@@ -37,11 +37,12 @@ Durée Totale: 3 heures
 
 ---
 
-Instructions : 
+Instructions :
+
 - Vous pouvez consulter des ressources en ligne et les exercices fait en cours. L'exercice est individuel.
 - Le code doit être propre, bien organisée et commenté
 - Créer un fork du projet et cloner le pour travailler dessus.
 - Le dernier commit avant midi sera pris en compte
 - Votre projet doit être publique ou partagé avec l'utilisateur Github Gension
 
-GL HF ! 
+GL HF !
