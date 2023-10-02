@@ -12,10 +12,10 @@
         <div class="logo">CloudOptim</div>
     </header>
     <main class="table-layout">
-        <div class="left-column">            
+        <div class="left-column"> 
+            <h2>Ajouter un serveur</h2>           
             <!-- Formulaire pour ajouter un nouveau serveur -->
-            <form id="add-server-form">
-                <h2>Ajouter un serveur</h2>
+            <form id="add-server-form">                
                 <p>
                     <label for="server-name">Nom du serveur:</label>
                     <input type="text" id="server-name" name="server-name" required>
@@ -42,11 +42,10 @@
         </div>
         <div class="right-column">
            <!-- Section principale avec la liste des serveurs -->
+            <h2>Liste des serveurs</h2>
             <ul class="server-list">
-                <!-- Serveurs fictifs -->
-                <h2>liste de serveurs</h2>
-                <li class="server">
-                    <p>
+                <!-- Serveurs fictifs -->                
+                <li class="server">                    <p>
                         <span class="server-name">Server 1</span>
                     </p>
                     <p>
@@ -67,9 +66,14 @@
         </div>       
             
     </main>
+    <footer>
+        <!-- Pied de page avec le nom de l'entreprise -->
+        &copy; 2023 - CloudOptim
+    </footer>
+    </html>
 
     <!-- ... (code HTML existant) ... -->
 
     <script src="dist/main.js"></script>
 </body>
-</html>
+

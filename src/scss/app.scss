@@ -4,6 +4,7 @@
 $primary-color: #3498db;
 $secondary-color: #e74c3c;
 $white: #fff;
+$grey:#8a8585;
 
 // Styles pour l'en-tête
 header {
@@ -13,7 +14,14 @@ header {
     text-align: center;
     font-size: 24px;
 }
+footer {
+    background-color: $primary-color;
+    color: $white;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
 
+}
 h2 {
     text-align: center;
     font-size: 24px;
@@ -26,7 +34,6 @@ h2 {
     font-weight: bold;
 
 }
-
 // Styles pour la liste des serveurs
 .server-list {
     list-style: none;
@@ -34,12 +41,13 @@ h2 {
 }
 
 .server {
-    border: 1px solid #fdf8f8;
+    border: 1px solid $grey;
     padding: 10px;
     margin: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 
     // Styles pour le bouton "Favoris"
     .fav-button {
@@ -67,35 +75,40 @@ main {
 
 .table-layout {
     display: table;
-    width: 80%;
+    width: 100%;
+    margin: 20px;
 }
 
 .left-column {
     display: table-cell;
-    width: 30%;
+    width: 10%;
     padding: 20px; /* Ajoutez de l'espace autour de la liste des serveurs */
     vertical-align: top; /* Alignez le contenu en haut */
     border: 1px solid $primary-color;
     border-radius: 5%;
+
 }
 
 .right-column {
     display: table-cell;
-    width: 30%;
+    width: 50%;
     padding: 20px; /* Ajoutez de l'espace autour du formulaire */
     border: 1px solid $primary-color;
     border-radius: 5%;
+
 }
 
 /* Styles pour le formulaire */
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    .input {
+        justify-content: left;
+        margin-bottom: 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
 }
-form input {
-    justify-content: left;
-    margin-bottom: 10px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+
