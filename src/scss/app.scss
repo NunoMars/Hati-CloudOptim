@@ -3,11 +3,12 @@
 // Variables SCSS pour les couleurs
 $primary-color: #3498db;
 $secondary-color: #e74c3c;
+$white: #fff;
 
 // Styles pour l'en-tête
 header {
     background-color: $primary-color;
-    color: #fff;
+    color: $white;
     padding: 10px;
     text-align: center;
     font-size: 24px;
@@ -40,11 +41,40 @@ header {
 
     .fav-button.favorited {
         color: $secondary-color;
+        color: $white;
     }
 
     // Styles pour les serveurs favoris
     &.favorite {
         background-color: $secondary-color;
-        color: #fff;
+        color: $white;
     }
 }
+/* Styles pour la disposition en tableau */
+main {
+    display: flex;
+    justify-content: center; /* Centrez le contenu horizontalement */
+}
+
+.table-layout {
+    display: table;
+    width: 80%;
+}
+
+.left-column {
+    display: table-cell;
+    width: 30%;
+    padding: 20px; /* Ajoutez de l'espace autour de la liste des serveurs */
+    vertical-align: top; /* Alignez le contenu en haut */
+    border: 1px solid $primary-color;
+    border-radius: 5%;
+}
+
+.right-column {
+    display: table-cell;
+    width: 30%;
+    padding: 20px; /* Ajoutez de l'espace autour du formulaire */
+    border: 1px solid $primary-color;
+    border-radius: 5%;
+}
+

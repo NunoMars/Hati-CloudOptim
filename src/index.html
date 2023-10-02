@@ -11,39 +11,50 @@
         <!-- En-tête avec le logo et le nom de CloudOptim -->
         <div class="logo">CloudOptim</div>
     </header>
-    <main>
-        <!-- Section principale avec la liste des serveurs -->
-        <ul class="server-list">
-            <!-- Serveurs fictifs -->
-            <li class="server">
-                <span class="server-name">Server 1</span>
-                <span class="server-status">Status: Online</span>
-                <span class="server-cpu">CPU: 20%</span>
-                <span class="server-memory">Memory: 60%</span>
-                <button class="fav-button">Favoris</button>
-            </li>
-            <!-- Ajoutez d'autres serveurs de la même manière -->
-        </ul>
-
-        <!-- Formulaire pour ajouter un nouveau serveur -->
-        <form id="add-server-form">
-            <label for="server-name">Nom du serveur:</label>
-            <input type="text" id="server-name" name="server-name" required>
+    <main class="table-layout">
+        <div class="left-column">            
+            <!-- Formulaire pour ajouter un nouveau serveur -->
+            <form id="add-server-form">
+                <h2>Ajouter un serveur</h2>
+                <p>
+                    <label for="server-name">Nom du serveur:</label>
+                    <input type="text" id="server-name" name="server-name" required>
+                </p>
+                <p>                
+                    <label for="server-status">Statut:</label>
+                    <select id="server-status" name="server-status">
+                        <option value="online">En ligne</option>
+                        <option value="offline">Hors ligne</option>
+                    </select>
+                </p>
+                <p>               
+                    <label for="server-cpu">CPU utilisé (%):</label>
+                    <input type="number" id="server-cpu" name="server-cpu" required>
+                </p>
+                <p>                
+                    <label for="server-memory">Mémoire utilisée (%):</label>
+                    <input type="number" id="server-memory" name="server-memory" required>
+                </p>
+                <p>              
+                    <button type="submit">Ajouter Serveur</button>
+                </p>
+            </form>
+        </div>
+        <div class="right-column">
+           <!-- Section principale avec la liste des serveurs -->
+            <ul class="server-list">
+                <!-- Serveurs fictifs -->
+                <li class="server">
+                    <span class="server-name">Server 1</span>
+                    <span class="server-status">Status: Online</span>
+                    <span class="server-cpu">CPU: 20%</span>
+                    <span class="server-memory">Memory: 60%</span>
+                    <button class="fav-button">Favoris</button>
+                </li>
+                <!-- Ajoutez d'autres serveurs de la même manière -->
+            </ul> 
+        </div>       
             
-            <label for="server-status">Statut:</label>
-            <select id="server-status" name="server-status">
-                <option value="online">En ligne</option>
-                <option value="offline">Hors ligne</option>
-            </select>
-            
-            <label for="server-cpu">CPU utilisé (%):</label>
-            <input type="number" id="server-cpu" name="server-cpu" required>
-            
-            <label for="server-memory">Mémoire utilisée (%):</label>
-            <input type="number" id="server-memory" name="server-memory" required>
-            
-            <button type="submit">Ajouter Serveur</button>
-        </form>
     </main>
 
     <!-- ... (code HTML existant) ... -->
