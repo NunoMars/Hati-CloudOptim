@@ -43,11 +43,27 @@ addServerForm.addEventListener('submit', function (e) {
     const newServer = document.createElement('li');
     newServer.classList.add('server');
     newServer.innerHTML = `
+        <p>
         <span class="server-name">${serverName}</span>
+        </p>
+        <p>
         <span class="server-status">Status: ${serverStatus}</span>
+        </p>
+        <p>
         <span class="server-cpu">CPU: ${serverCPU}%</span>
+        </p>
+        <p>
+        <progress min="0" max="100" value="${serverCPU}"></progress>
+        </p>
+        <p>
         <span class="server-memory">Memory: ${serverMemory}%</span>
+        </p>
+        <p>
+        <progress min="0" max="100" value="${serverMemory}"></progress>
+        </p>
+        <p>
         <button class="fav-button">Favoris</button>
+        </p>
     `;
 
     // Ajoutez ce nouveau serveur à la liste

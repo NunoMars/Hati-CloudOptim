@@ -41,18 +41,19 @@ h2 {
 }
 
 .server {
-    border: 1px solid $grey;
+    border: 1px solid $primary-color;
     padding: 10px;
     margin: 10px;
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     align-items: center;
-
-
+    border-radius: 5%;
+    font-weight: bold;
+    font-size: 20px;
     // Styles pour le bouton "Favoris"
     .fav-button {
         background-color: transparent;
-        border: none;
+        border: 1px solid $grey;
         cursor: pointer;
     }
 
@@ -81,7 +82,8 @@ main {
 
 .left-column {
     display: table-cell;
-    width: 10%;
+    align-items:first baseline;
+    width: 15%;
     padding: 20px; /* Ajoutez de l'espace autour de la liste des serveurs */
     vertical-align: top; /* Alignez le contenu en haut */
     border: 1px solid $primary-color;
@@ -94,7 +96,7 @@ main {
     width: 50%;
     padding: 20px; /* Ajoutez de l'espace autour du formulaire */
     border: 1px solid $primary-color;
-    border-radius: 5%;
+    border-radius: 2%;
 
 }
 
