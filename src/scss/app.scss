@@ -14,8 +14,17 @@ header {
     font-size: 24px;
 }
 
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
 .logo {
     font-weight: bold;
+
 }
 
 // Styles pour la liste des serveurs
@@ -25,7 +34,7 @@ header {
 }
 
 .server {
-    border: 1px solid #ddd;
+    border: 1px solid #fdf8f8;
     padding: 10px;
     margin: 10px;
     display: flex;
@@ -78,3 +87,15 @@ main {
     border-radius: 5%;
 }
 
+/* Styles pour le formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+form input {
+    justify-content: left;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
